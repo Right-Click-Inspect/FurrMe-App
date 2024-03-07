@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    transition: 0.2s;
+}
+
+.login--background {
+    background: url(../../Assets/Login\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+image {
+    background-color: red;
+}
+
+.login_container {
+    position: absolute;
+    width: 40vw;
+    min-height: 100%;
+    background-color: #f2e6d6;
+    position: absolute;
+    right: 0;
+    box-shadow: -10px 0 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.813rem;
+}
+
+.pawLogo {
+    width: 9.375rem;
+    height: auto;
+}
+
+.login_container h1 {
+    font-weight: 600;
+    font-size: 4.375rem;
+    color: #474747;
+    margin-right: 20px;
+}
+
+.tagline {
+    font-weight: 400;
+    font-size: 0.938rem;
+    font-style: italic;
+    color: #474747;
+    text-align: center;
+}
+
+.login_container .vertLine1,
+.login_container .vertLine2 {
+    margin-top: 93px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 1px;
+    background-color: #474747;
+}
+
+.lblLogin {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.login_header {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 30px;
+    color: #474747;
+}
+
+.login_container .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_container .inputContainer {
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputemail {
+    margin-bottom: 30px;
+}
+
+.login_container label {
+    font-size: 17;
+    color: #474747;
+}
+
+.login_container .inputContainer input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: -8px 8px 10px -4px rgba(201, 181, 155, 0.8);
+}
+
+/* Optional: Style when the text box is focused */
+.login_container .inputContainer input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #9c784a; /* Change the border color on focus */
+}
+
+.login_container .inputContainer .forgotPassword {
+    color: #474747;
+    align-self: flex-end;
+}
+
+.login_container .inputContainer .forgotPassword:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #9c784a; /* Change text color on hover */
+}
+
+.login_container .inputContainer .btnLogin {
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    color: #474747;
+    background-color: #f2e6d6;
+    box-shadow: -8px 8px 10px -4px rgba(201, 181, 155, 0.8);
+    align-self: center;
+    cursor: pointer;
+}
+
+.login_container .inputContainer .btnLogin:hover {
+    background-color: #d4bb9a; /* Change text color on hover */
+}
+
+.login_container .footer {
+    font-size: 15px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.createAccount {
+    color: #9c784a;
+}
+
+.login_container .inputContainer p {
+    color: #474747;
+}
+
+.createAccount:hover {
+    text-decoration: underline;
+}
+
+.bgImgs {
+    width: 60px;
+    height: auto;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    transform: rotate(-45deg);
+    z-index: inherit;
+}

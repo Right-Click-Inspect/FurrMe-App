@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s;
+}
+
+.signup--background {
+    background: url(../../Assets/pexels-antonio-joshy-18317770.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.signup_container {
+    background-color: #f2e6d6;
+    position: absolute;
+    right: 0;
+    width: 35vw;
+    min-height: 100%;
+    box-shadow: -10px 0 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+.createAccntStruct {
+    display: flex;
+    justify-content: center;
+}
+
+.signup_container .vertLine {
+    margin: 16px 15px;
+    width: 140px;
+    height: 1px;
+    background-color: #474747;
+}
+
+.explore {
+    position: absolute;
+    width: 820px;
+    height: 200px;
+    top: 450px;
+    left: 200px;
+    text-align: center;
+    padding: 30px;
+}
+
+.p_encouragement {
+    color: white;
+    font-style: italic;
+    font-weight: 100px;
+    font-size: 17px;
+}
+
+.p_encouragement:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.btnDiscover {
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #f2e6d6;
+    color: #474747;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btnDiscover:hover {
+    background-color: #d4bb9a;
+}
+
+.signup_container .header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.pawLogo {
+    height: 150px;
+    width: auto;
+}
+
+.signup_container .header h1 {
+    font-size: 80px;
+    color: #474747;
+    margin-top: 20px;
+}
+
+.createAccntStruct h2 {
+    color: #474747;
+}
+
+.signup_container .inputs {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    gap: 1.875rem;
+}
+
+.signup_container .name {
+    display: flex;
+    gap: 20px;
+}
+
+#firstName,
+#lastName {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .name {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.signup_container .inputs input[type="text"],
+input[type="password"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    box-shadow: -8px 8px 10px -4px rgba(201, 181, 155, 0.5);
+}
+
+.signup_container .inputs input[type="text"]:focus,
+.signup_container .inputs input[type="password"]:focus {
+    border-color: #9c784a;
+}
+
+.btnCreate {
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #474747;
+    background-color: #f2e6d6;
+    box-shadow: -8px 8px 10px -4px rgba(201, 181, 155, 0.5);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btnCreate:hover {
+    cursor: pointer;
+    background-color: #d4bb9a;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #474747;
+}
+
+.login {
+    font-size: 15px;
+    align-self: center;
+    color: #474747;
+}
+
+.signup_container .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.signup_container .footer p {
+    text-align: center;
+    font-size: 12px;
+}
